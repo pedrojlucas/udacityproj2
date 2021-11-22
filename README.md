@@ -1,9 +1,8 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Udacity Nanodegree Machine Learning Engineer with Azure project 2 (MLOps)
 
+This project is part of the assigments of the Udacity Nanodegree Machine Learning Engineer with Azure. In this case the project is focused in developing all the MLOps phylosohpy using a example case.
 
-# Your Project Title Here
-
-*TODO:* Write an overview to your project.
+In first place we will train a model with a bank marketing dataset, that is intended to find out if a customer will subscribe certain financial product or not. The training of the classification model will be carried out using Azure AutoML.
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
