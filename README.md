@@ -32,13 +32,23 @@ In order to monitor our architecture and model perfomance we can use Apache Benc
 
 ![AutoML Best model](/screenshots/Udacity_project2_bestmodel.jpg)
 
-![Model logs]/(/screenshots/Udacity_project2_logsfromendpoint.jpg)
+![Model logs](/screenshots/Udacity_project2_logsfromendpoint.jpg)
 
 ![Model AppInsights](/screenshots/Udacity_project2_appinsights.jpg)
 
 ![Swagger API doc](/screenshots/Udacity_project2_swaggerapidoc.jpg)
 
 ![Apache Benchmark](/screenshots/Udacity_project2_apache_benchmark.jpg)
+
+![Pipeline running](/screenshots/Udacity_project2_automl_pipeline_running.jpg)
+
+![Pipeline endpoint](/screenshots/Udacity_project2_automl_pipeline_endpoint.jpg)
+
+![Pipeline published](/screenshots/Udacity_project2_automl_pipeline_published.jpg)
+
+![Pipeline scheme](/screenshots/Udacity_project2_automl_pipeline_scheme.jpg)
+
+![Pipeline Scheduled completed](/screenshots/Udacity_project2_automl_pipeline_scheduled_completed.jpg)
 
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
