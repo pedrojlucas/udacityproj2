@@ -54,7 +54,6 @@ In order to monitor our architecture and model perfomance we can use Apache Benc
 
 ## Screen Recording
 
-https://youtu.be/YJxICUy7xZg
+Next it is a link to a video were all the pipeline workflow is described.
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+https://youtu.be/YJxICUy7xZg
