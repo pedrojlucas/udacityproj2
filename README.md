@@ -26,15 +26,29 @@ In order to monitor our architecture and model perfomance we can use Apache Benc
 
 ## Key Steps
 
+In this point we will discuss the most important steps in the process of creating a machine learning model endpoint and how to build a pipeline that automatizes the process in Azure.
+
+First of all we register our dataset in Azure in order to be available for all the Azure tools.
+
 ![Registered Dataset](/screenshots/Udacity_project2_registereddataset.jpg)
+
+We train a classification model using Azure AutoML. Here we can see the AutoML Azure experiment completed.
 
 ![AutoML completed](/screenshots/Udacity_project2_experimentcompleted.jpg)
 
+Next we can select the best model from the AutoML experiment. This model is deployed clicking in the "Deploy" tab and choosing "Web service deployment". It will take some minutes to finish the endpoint creation.
+
 ![AutoML Best model](/screenshots/Udacity_project2_bestmodel.jpg)
+
+In order to monitor the perfomance of the model endpoint, we have to activate the Application Insights slider, so Azure is more verbose in its outputs to the logs.
+
+![Model AppInsights](/screenshots/Udacity_project2_appinsights.jpg)
+
+We can use a python script to access the logs, as it is shown in the next screenshot.
 
 ![Model logs](/screenshots/Udacity_project2_logsfromendpoint.jpg)
 
-![Model AppInsights](/screenshots/Udacity_project2_appinsights.jpg)
+
 
 ![Swagger API doc](/screenshots/Udacity_project2_swaggerapidoc.jpg)
 
