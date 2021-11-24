@@ -40,7 +40,7 @@ Next we can select the best model from the AutoML experiment. This model is depl
 
 ![AutoML Best model](/screenshots/Udacity_project2_bestmodel.jpg)
 
-In order to monitor the perfomance of the model endpoint, we have to activate the Application Insights slider, so Azure is more verbose in its outputs to the logs.
+In order to monitor the perfomance of the model endpoint, we have to activate the Application Insights so Azure is more verbose in its outputs to the logs. To activate the Application Insights we can do it by the UI or using the AzureML SDK in a python script.
 
 ![Model AppInsights](/screenshots/Udacity_project2_appinsights.jpg)
 
@@ -48,11 +48,19 @@ We can use a python script to access the logs, as it is shown in the next screen
 
 ![Model logs](/screenshots/Udacity_project2_logsfromendpoint.jpg)
 
-
+The model endpoint will provide an API to get predictions. This API is documented by Swagger so we will know the format of the data we have to send in our request to the endpoint for getting new predictions. In order to get Swagger running we need to download a Docker container and run it in the proper port (in our case is the 9000) and use a python script to serve the swagger.json file that contains all the API information, we can access it through a web browser pointed to the URL http://localhost:9000.  
 
 ![Swagger API doc](/screenshots/Udacity_project2_swaggerapidoc.jpg)
 
+Using a python script to launch requests to the model endpoint, we can get predictions. The script has embedded the data needed as input to the model in json format. In the next screenshot we can see the answer to our prediction request.
+
+![Endpoint results](/screenshots/Udacity_project2_endpointresult.jpg)
+
+Finally, we can test the perfomance of our model serving using Apache Benchmark that will provide very useful information about the response of our model endpoint when it receives a prediction request.
+
 ![Apache Benchmark](/screenshots/Udacity_project2_apache_benchmark.jpg)
+
+
 
 ![Pipeline running](/screenshots/Udacity_project2_automl_pipeline_running.jpg)
 
