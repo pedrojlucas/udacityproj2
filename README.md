@@ -60,22 +60,34 @@ Finally, we can test the perfomance of our model serving using Apache Benchmark 
 
 ![Apache Benchmark](/screenshots/Udacity_project2_apache_benchmark.jpg)
 
-
+Now we are going to put some automation in the process by creating a pipeline. We can create a pipeline using the UI or using the SDK through a Jupyter Notebook. We have chosen to do that by the later. In the next screenshot we can see a pipeline created running.
 
 ![Pipeline running](/screenshots/Udacity_project2_automl_pipeline_running.jpg)
 
-![Pipeline endpoint](/screenshots/Udacity_project2_automl_pipeline_endpoint.jpg)
+We can also create a pipeline endpoint so we can interact with it and launch the pipeline whenever is needed. In the pipeline endpoints section of the pipeline tab in Azure UI we can see the pipeline endpoint created lately.
 
 ![Pipeline published](/screenshots/Udacity_project2_automl_pipeline_published.jpg)
 
+Clicking on the name of the pipeline endpoint we can see URI for the REST API of the pipeline endpoint and we can get access to different options as the parameters of the pipeline and a scheme of the associated workflow to the pipeline.
+
+![Pipeline endpoint](/screenshots/Udacity_project2_automl_pipeline_endpoint.jpg)
+
+In the Jupyter Notebook used to interact with the Azure SDK and create our pipeline we can also see the pipeline details by RunDetails widget.
+
 ![Pipeline scheme](/screenshots/Udacity_project2_automl_pipeline_scheme.jpg)
 
-![Pipeline Scheduled completed](/screenshots/Udacity_project2_automl_pipeline_scheduled_completed.jpg)
+At the end of the workflow process associated to the pipeline we can see that the pipeline run is completed.
 
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+![Pipeline Scheduled completed](/screenshots/Udacity_project2_automl_pipeline_scheduled_completed.jpg) 
 
 ## Screen Recording
 
 Next it is a link to a video were all the pipeline workflow is described.
 
 https://youtu.be/YJxICUy7xZg
+
+## Future improvements
+
+As a improvement over the existing project maybe we can develop a better UI for interacting with our model endpoint, so the user does not need to use python scripts directly and we will have a more user friendly interface.
+
+We can also develop some kind of stress tests using several simultaneous requests to check if our infraestructure can scale properly to fulfill a high demand period. We will mesaure this with de Apache Benchmarking and monitor it through the logs that the endpoint is generating. 
