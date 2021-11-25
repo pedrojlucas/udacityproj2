@@ -74,7 +74,7 @@ Clicking on the name of the pipeline endpoint we can see URI for the REST API of
 
 In the Jupyter Notebook used to interact with the Azure SDK and create our pipeline we can also see the pipeline details by RunDetails widget.
 
-![Pipeline scheme](/screenshots/Udacity_project2_automl_pipeline_scheme2.jpg)
+![Pipeline scheme](/screenshots/Udacity_project2_automl_pipeline_scheme_2.jpg)
 
 At the end of the workflow process associated to the pipeline we can see that the pipeline run is completed.
 
